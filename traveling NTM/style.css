@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  background: #0b1d26;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/HG.png");
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  width: 100%;
+  text-align: center;
+  height: 25px;
+  top: 50px;
+  padding: 40px 30px;
+  z-index: 20;
+}
+
+.navbar-logo {
+  float: left;
+  z-index: 20;
+  color: white;
+}
+.navbar-logo h1 {
+  color: white;
+  font-family: Chronicle Display;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.navbar-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+  z-index: 20;
+}
+.navbar-text a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar-right {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 20;
+}
+
+.navbar-right p {
+  color: whitesmoke;
+  z-index: 20;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  z-index: 20;
+  margin-bottom: 20%;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  z-index: 20;
+  margin-bottom: 20%;
+}
+
+.left-side p {
+  color: #ffffff;
+}
+
+.right-side p {
+  color: #ffffff;
+}
+
+.vertical-text {
+  transform: rotate(0deg);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  margin: 10px;
+  z-index: 20;
+}
+
+.hero-center {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 30;
+  margin-bottom: 20%;
+}
+.hero-center h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: Chronicle Display;
+}
+.firstheading {
+  width: 700px;
+  height: 200px;
+}
+.firstheading h1 {
+  font-family: Chronicle Display;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.line-1 {
+  width: 316px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.line-1 hr {
+  margin-top: 10px;
+  height: 2px;
+  background: #fbd784;
+  width: 72px;
+}
+.line-1 p {
+  color: #fbd784;
+  font-family: Gilroy;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 6px;
+}
+.fa-brands {
+  color: #ffffff;
+}
+.bottom-middle {
+  width: 126px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-middle h1 {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+.fa-arrow-down {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.image-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image1,
+.image2,
+.image3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image1 {
+  z-index: 1;
+  background-image: url("/images/HG.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/HG.png");
+}
+
+.image2 {
+  z-index: 2;
+  background-image: url("/images/MG.png");
+
+  right: 0;
+  top: 40%;
+}
+
+.image3 {
+  z-index: 3;
+  background-image: url("/images/VG.png");
+  background-position: bottom;
+  top: 60%;
+  left: 0;
+}
